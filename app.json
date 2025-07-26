@@ -1,0 +1,44 @@
+{
+  "name": "XBOT-MD",
+  "description": "Javascript WhatsApp bot made by DavidX",
+  "logo": "https://files.catbox.moe/06cgye.jpg",
+  "keywords": ["X-BOT-MD"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true,
+      "value": ""
+    },  
+    
+    
+    "MODE": {
+      "description": "select your bot work type public-private-inbox-group.",
+      "required": false,
+      "value": "public"
+      
+    },
+        "AUTO_STATUS_SEEN": {
+      "description": "Make it true for automatic status seen.",
+      "required": true,
+      "value": "false"
+    }, 
+
+    "AUTO_STATUS_REACT": {
+      "description": "make it true for automatic status reaction or like.",
+      "required": true,
+      "value": "false"
+    }
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
+  
